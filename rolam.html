@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolam, imsertető</title>
+</head>
+
+<body>
+    <h1>Rólam</h1>
+    <ul>
+        <li> <a href="/">Home</a> </li>
+        <li> <a href="pages/products.html">Prudocts</a> </li>
+        <li> <a href="pages/orders.html">Orders</a></li>
+        <li><a href="/rolam.html">Rolam </a> </li>
+        <li><a href="/felsorolas.html">Felsorolás</a></li>
+    </ul>
+
+    <h1>Táblázat</h1>
+    <!--Sorok elem a tr, a cellák pedig a td-->
+    <table>
+        <caption>Opening hours</caption>
+        <!--táblázat címe a caption-->
+        <thead>
+            <tr>
+                <th>Day</th>
+                <!--oszlop fejlécek-->
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <!--táblázat fejléce-->
+
+        <tbody>
+            <!-- ha létrehozom a tálázat fejlécét akkor megköveteli hogy legyen táblázat testrésze ahol az adatok vannak-->
+
+
+
+            <tr>
+                <td>Monday - Friday</td>
+                <td>09:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>09:00</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>09:00</td>
+                <td>12 :00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    &copy; 2020; Nagy Norbi
+
+                </td>
+
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Összevont táblázat</h2>
+    <table>
+        <caption>Opening hours</caption>
+        <!--táblázat címe a caption-->
+        <thead>
+            <tr>
+                <th>Day</th>
+                <!--oszlop fejlécek-->
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <!--táblázat fejléce-->
+
+        <tbody>
+            <!-- ha létrehozom a tálázat fejlécét akkor megköveteli hogy legyen táblázat testrésze ahol az adatok vannak-->
+
+
+
+            <tr>
+                <td>Monday - Friday</td>
+                <td>09:00</td>
+                <td rowspan="2">21:00</td>
+                <!--rowpsannal kinyújtom a cella magasságát-->
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00</td>
+
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2" align="center">Closed</td>
+                <!--colspan-nal kinyújtozik viszintes széleségbe-->
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    &copy; 2020; Nagy Norbi
+
+                </td>
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
